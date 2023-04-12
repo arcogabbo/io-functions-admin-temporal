@@ -12,7 +12,7 @@ import { SetUserDataActivityResultSuccess as SetUserDataProcessingStatusActivity
 import { SetUserDataActivityResultSuccess as SendUserDataDownloadMessageActivityResultSuccess} from "./activities/types";
 // import { trackUserDataDownloadEvent, trackUserDataDownloadException } from "../utils/appinsightsEvents";
 
-const logPrefixDownloadOrch = "UserDataDownloadOrchestrator";
+// const logPrefixDownloadOrch = "UserDataDownloadOrchestrator";
 
 // retry options
 const {
