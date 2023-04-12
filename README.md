@@ -45,6 +45,7 @@ they may be customized as needed.
 | MAILHOG_HOSTNAME                 | Required on development, the host name of the MailHog SMTP server                                | string |
 | SubscriptionFeedStorageConnection| Storage connection string for subscription feed                                                  | string |
 | SUBSCRIPTIONS_FEED_TABLE         | Table name for the Subscriptions Feed in the storage                                             | string |  
+| TEMPORAL_ADDRESS                 | Temporal cluster address                                                                         | string |
 
 
 #### Feature flags
