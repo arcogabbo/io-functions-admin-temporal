@@ -12,10 +12,7 @@ import {
   ABORT_EVENT as ABORT_DELETE_EVENT,
   makeOrchestratorId as makeDeleteOrchestratorId
 } from "../UserDataDeleteOrchestratorV2/utils";
-import {
-  trackUserDataDeleteEvent,
-  trackUserDataDownloadEvent
-} from "../utils/appinsightsEvents";
+import { trackUserDataDeleteEvent } from "../utils/appinsightsEvents";
 import { flags } from "../utils/featureFlags";
 import { isOrchestratorRunning } from "../utils/orchestrator";
 import { DeleteTableEntity, InsertTableEntity } from "../utils/storage";
