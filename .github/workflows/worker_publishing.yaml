@@ -62,7 +62,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:v${{ github.events.inputs.target_version }}
+            ghcr.io/${{ github.repository }}:v${{ inputs.target_version }}
           labels: |
             maintainer=arcogabbo
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
