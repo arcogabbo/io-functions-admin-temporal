@@ -10,6 +10,10 @@ on:
       - '**.md'
       - ".**"
   workflow_dispatch:
+    inputs:
+      target_version:
+        description: "Target version"
+        default: 0.0.0
     
 
 jobs:
@@ -58,7 +62,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:v${{ steps.release.outputs.new_release_version }}
+            ghcr.io/${{ github.repository }}:v${{ github.events.inputs.target_version }}
           labels: |
             maintainer=arcogabbo
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
